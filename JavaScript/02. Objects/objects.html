@@ -6,6 +6,21 @@
   </head>
   <body>
 
+    <p id="method"></p>
+    
+    <script>
+      var person = {
+        firstName = "John",
+        lastName = "Doe",
+        id: 1234,
+        fullName: function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+
+      document.getElementById("method").innerHTML = person.fullName();
+    </script>
+
   <!-- Start JavaScript Here -->
   <script type="text/javascript" src="objects.js">
 
